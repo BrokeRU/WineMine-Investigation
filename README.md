@@ -15,6 +15,7 @@ Thus bug evidently exists. Have found place in code where game board gets genera
     row = (int) (p_board->rows * (float) rand() / RAND_MAX + 1);
 Wrote some little program to test this piece of code 1 000 000 times (`p_board->cols = p_board->rows = 9`).
 Result: Algorithm returns almost uniform distribution. But... ~30 times of 1 000 000 it returned 10.
+
     0: 0
     1: 110972
     2: 111621
@@ -32,6 +33,7 @@ Result: Algorithm returns almost uniform distribution. But... ~30 times of 1 000
     row = rand() % p_board->rows + 1;
 
 Result:
+
     0: 0
     1: 110615
     2: 111038
@@ -43,3 +45,6 @@ Result:
     8: 111723
     9: 111167
     10: 0
+
+# Conclusion
+For now patch is send and accepted in Wine. Waiting while ReactOS sync WinMine with Wine.
