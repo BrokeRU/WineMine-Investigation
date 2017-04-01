@@ -28,7 +28,9 @@ Result: Algorithm returns almost uniform distribution. But... ~30 times of 1 000
     7: 110949
     8: 110681
     9: 111541
-    10: 30 <---
+    10: 30 <--- ???
+
+Thus numbers showed correct values. Just mines were out of the game board.
 
 # Stage 4: Fix
     col = rand() % p_board->cols + 1;
